@@ -1,0 +1,123 @@
+:root[data-theme = "theme-light"]{
+    --bg-color: hsl(0, 0%, 98%);
+    --text-color: hsl(200, 15%, 8%);
+    transition: all .3s ease-in;
+
+}
+
+:root[data-theme = "theme-dark"]{
+    transition: all .5s ease-in-out;
+    --bg-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 0%, 100%);
+}
+.light{
+    transition: all .5s ease-in-out;
+    --bg-color: hsl(0, 0%, 98%);
+    --text-color: hsl(200, 15%, 8%);
+}
+.dark{
+    
+    --bg-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 0%, 100%);
+}
+body{
+    transition: all .5s ;
+}
+
+*{
+    //transition: all .3s ease-in;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+.header{
+    display: flex;
+    padding: 20px 50px;
+    transition: all .3s ease-in;
+    background: var(--bg-color);
+    justify-content: space-between;
+    >p{
+        font-weight: 800;
+    }
+}
+.dark-mode-div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   i{
+       padding-right: 5px;
+   }
+}
+.search-div{
+        width: 300px;
+        height: 40px;
+        border: none;
+        background: var(--bg-color);
+        border-radius: 5px;
+        padding: 10px;
+       box-shadow: 0px 0px 5px 0px rgba($color: #000000, $alpha: 0.2);
+       margin-bottom: 30px;
+    input{
+        color: var(--text-color);
+         width: 250px;
+         border: none;
+         outline: none;
+    }
+}
+
+.choose-region{
+    margin-bottom: 20px;
+    select{
+        outline: none;
+        border: none;
+        width: 200px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.container{
+    padding: 20px 50px;
+    background: var(--bg-color);
+}
+.countries-container{
+    background: var(--bg-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+.country-container{
+    background: var(--bg-color);
+    width: 310px;
+    cursor: pointer;
+   // height: auto;
+    box-shadow: 0px 0px 5px 0px rgba($color: hsl(207, 26%, 10%), $alpha: .5);
+    align-items: center;
+    display: block;
+    margin: 20px auto;
+    img{
+        width: 310px;
+        height: 210px;
+    }
+
+}
+.country-info{
+    padding: 15px;
+    a{
+        text-decoration: none;
+       
+    }
+    h2{
+        padding-bottom: 15px;
+    }
+    p{
+        padding-bottom: 10px;
+        font-weight: 600;
+        span{
+            font-weight: 300;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/cssfontawesome/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/cssfontawesome/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST countries API</title>
+</head>
+<body>
+    <header class="header">
+        <p>Where in the world?</p>
+        <div class="dark-mode-div">
+            <i class="far fa-moon"></i>
+            <p>Dark Mode</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="search-div">
+            <i class="fa fa-search"></i>
+            <input type="text" name="search-country" id="search-field" placeholder="Search for a country">
+        </div>
+    
+        <div class="choose-region">
+            <select name="filter-region" id="filter-region" aria-placeholder="Choose">
+                <option value="Nigeria">Filter by Region</option>
+                <option value="Nigeria">Africa</option>
+                <option value="Nigeria">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Nigeria">Europe</option>
+                <option value="Nigeria">Oceania</option>
+                <option value="Nigeria">Polar</option>
+                
+            </select>
+        </div>
+    
+        <div class="countries-container">
+           
+        </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
